@@ -45,7 +45,7 @@ class Jogador(GameObject):
 
         inimigos = GameObject.find("inimigo")
         for enemy in inimigos:
-            # verifica se o projetil colidiu com o inimigo
+            # verifica se o jogador colidiu com o inimigo
             if (
                 math.sqrt(
                     (self.pos.x - enemy.pos.x) ** 2 + (self.pos.y - enemy.pos.y) ** 2

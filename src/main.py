@@ -1,14 +1,16 @@
 import pygame
+pygame.init()
+pygame.font.init()
+
 import globals.var
 from scenes import menu_inicial, combate, menu_entre_niveis, menu_fim
 import globals
 
 
 def main():
-    pygame.init()
+    
 
     screen = pygame.display.set_mode(globals.var.screen_size)
-    pygame.font.init()
 
     # status inicial
     status = {"vida": 2, "dinheiro": 10}

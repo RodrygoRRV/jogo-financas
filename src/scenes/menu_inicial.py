@@ -1,6 +1,7 @@
 import pygame
 from classes.botao import Botao
 from classes.gameobject import GameObject
+from classes.intro import Intro
 
 
 def run(screen, status):
@@ -25,6 +26,7 @@ def run(screen, status):
         radius=10,
         on_click=iniciar_jogo,
     )
+    #Intro(iniciar_jogo)   #comentado por enquanto ate a criaçao do menu historia
 
     while running:
         events = pygame.event.get()
